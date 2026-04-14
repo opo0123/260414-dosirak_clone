@@ -1,0 +1,69 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  padding: 0 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0);
+  z-index: 9999;
+}
+/* logo */
+.logo {
+  position: relative;
+  width: 125px;
+  height: 25px;
+  background: url("../images/logo_white.png") no-repeat center;
+  background-size: cover;
+}
+/* 메뉴 */
+.nav {
+  width: 80%;
+}
+.gnb {
+  display: flex;
+  gap: 34px;
+}
+.gnb > li {
+  width: calc(100% / 7);
+}
+.gnb > li > a {
+  display: block;
+  text-align: center;
+  /* font-size: 17px; */
+  line-height: 100px;
+  font-weight: 500;
+  color: #fff;
+  white-space: nowrap;
+}
+.gnb > li > a > span {
+  position: relative;
+}
+.gnb > li > a > span::after {
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #fff;
+  content: "";
+  opacity: 0;
+  transition: all 0.5s;
+}
+.gnb > li > a:hover > span::after {
+  width: 100%;
+  opacity: 1;
+}
+
+/* 모바일 메뉴 버튼 */
+.mb-btn {
+  display: none;
+}
+/* 모바일 메뉴 */
+.nav-mb {
+  display: none;
+}
