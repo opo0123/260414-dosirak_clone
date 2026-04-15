@@ -11,7 +11,9 @@
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
   background-color: rgba(255, 255, 255, 0);
   z-index: 9999;
+  transition: all 0.3s;
 }
+
 /* logo */
 .logo {
   position: relative;
@@ -23,6 +25,7 @@
 /* 메뉴 */
 .nav {
   width: 80%;
+  max-width: 900px;
 }
 .gnb {
   display: flex;
@@ -34,7 +37,7 @@
 .gnb > li > a {
   display: block;
   text-align: center;
-  /* font-size: 17px; */
+  font-size: 17px;
   line-height: 100px;
   font-weight: 500;
   color: #fff;
@@ -66,4 +69,27 @@
 /* 모바일 메뉴 */
 .nav-mb {
   display: none;
+}
+
+/* 헤더 스크롤 시 */
+/* 배경 변경 */
+.header.active {
+  height: 80px;
+  box-shadow: 10px 0 15px 0 rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 1);
+}
+/* 로고 변경 */
+.header.active .logo {
+  position: relative;
+  width: 125px;
+  height: 25px;
+  background: url(../images/logo.png) no-repeat center;
+  background-size: cover;
+}
+/* 메뉴 변경 */
+.header.active .gnb > li > a {
+  color: #222;
+}
+.header.active .gnb > li > a.active > span::after {
+  background-color: #222;
 }

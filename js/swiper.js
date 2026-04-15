@@ -7,7 +7,7 @@ window.addEventListener("load", () => {
     autoplay: {
       delay: 2500,
       // 사용자가 마우스 클릭 드래그로 이동하면
-      // 아래 구문이 없으면 autoplya 가 해제되므로
+      // 아래 구문이 없으면 autoplay 가 해제되므로
       // 이것을 방지해 주기위한 처리
       disableOnInteraction: false,
     },
