@@ -1,19 +1,19 @@
-/* header */
 @media (max-width: 1600px) {
-  .sw-business a{
+  .sw-business a {
     padding: 30px;
   }
+  .business a img {
+    width: 70%;
+  }
 }
-
 @media (max-width: 1024px) {
-  /* header */
   .header {
     height: 70px;
   }
   .nav {
     display: none;
   }
-  .mb-btn {
+  .mbt {
     position: relative;
     display: block;
     width: 30px;
@@ -22,7 +22,10 @@
     background: none;
     cursor: pointer;
   }
-  .mb-btn span {
+  .mbt.active span {
+    background-color: #222;
+  }
+  .mbt span {
     position: absolute;
     top: 0;
     left: 0;
@@ -31,43 +34,28 @@
     height: 2px;
     background-color: #fff;
   }
-  .mb-btn span:nth-child(1) {
+  .mbt span:nth-child(1) {
     top: 0;
     transform-origin: 0 50%;
     transition: all 0.3s;
   }
-  .mb-btn span:nth-child(2) {
+  .mbt.ani span:nth-child(1) {
+    transform: rotate(45deg);
+  }
+  .mbt span:nth-child(2) {
     top: 50%;
   }
-  .mb-btn span:nth-child(3) {
+  .mbt.ani span:nth-child(2) {
+    opacity: 0;
+  }
+  .mbt span:nth-child(3) {
     top: 100%;
     transform-origin: 0 50%;
     transition: all 0.3s;
   }
-  .mb-btn.active span {
-    background-color: #222;
-  }
-
-  /* 클릭시 X로 변경 */
-  .mb-btn.ani span:nth-child(1) {
-    transform: rotate(45deg);
-    background-color: #222;
-  }
-  .mb-btn.ani span:nth-child(2) {
-    opacity: 0;
-  }
-  .mb-btn.ani span:nth-child(3) {
+  .mbt.ani span:nth-child(3) {
     transform: rotate(-45deg);
-    background-color: #222;
   }
-
-  /* service */
-  .service {
-    margin: 100px 0;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-
   /* about */
   .about {
     margin-bottom: 100px;
@@ -85,11 +73,20 @@
     margin-bottom: 30px;
     font-size: 24px;
   }
+  .about-txt-desc {
+    margin-bottom: 25px;
+  }
   .about-link {
-    margin: 50px auto 0;
+    margin: auto;
+  }
+  /* business */
+  .business a h2 {
+    font-size: 24px;
+  }
+  .business a p {
+    font-size: 16px;
   }
 }
-
 @media (max-width: 480px) {
   .inner {
     width: 90% !important;
@@ -99,5 +96,17 @@
   }
   .about-txt-main {
     font-size: 20px;
+  }
+  .busi-br {
+    display: none;
+  }
+  .business a img {
+    width: 50%;
+  }
+  .sw-business {
+    height: 300px;
+  }
+  .sw-business a {
+    padding: 25px 20px;
   }
 }

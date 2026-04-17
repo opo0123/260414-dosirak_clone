@@ -5,13 +5,13 @@ window.addEventListener("load", () => {
     // spaceBetween: 20, // slide 간격 (gap)
 
     breakpoints: {
-      // 640 이후
+      // 480 이후
+      480: {
+        slidesPerView: 1,
+      },
       640: {
         slidesPerView: 2,
       },
-    },
-
-    breakpoints: {
       //1024 이후
       1024: { slidesPerView: 3 },
     },
