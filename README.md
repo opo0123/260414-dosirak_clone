@@ -3,3 +3,4 @@
 # 260415-상단 스크롤, service영역 css까지 작업
 # 260416-헤더 반응형, 모바일 메뉴 작업
 # 260417- about,business,반응형 작업
+# 260420- business modal 추가, footer, service 반응형/scroll 추가, gotop 작업

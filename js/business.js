@@ -16,4 +16,10 @@ window.addEventListener("load", () => {
       1024: { slidesPerView: 3 },
     },
   });
+
+  // modal - 클릭시 없어짐
+  const businessModal = document.querySelector(".business-modal");
+  businessModal.addEventListener("click", () => {
+    businessModal.style.display = "none";
+  });
 });
